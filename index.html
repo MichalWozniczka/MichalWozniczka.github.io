@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Squares</title>
+</head>
+
+<body onload="draw()">
+    <div id="board">
+        <canvas id="canvas" width="400" height="300"></canvas>
+    </div>
+    <div id="score">
+        <h3>Squares: <span id="squares-total">0</span></h3>
+        <p>Unclaimed squares: <span id="squares-unclaimed">0</span></p>
+        <p>You are gaining <span id="squares-delta">0 squares</span> per second.</p>
+        <button onclick="claimSquares()">Claim Squares</button>
+        <hr>
+        <h3>Upgrades</h3>
+        <p><button id="upgrade-dimensions" disabled onclick="upgradeDimensions()">Increase Dimensions</button> <b id="level-dimensions">1 -> 2</b> Price: <span id="price-dimensions">10</span> squares (Board must be maxed out!)</p>
+        <p id="speed" hidden><button id="upgrade-speed" disabled onclick="upgradeSpeed()">Counter Speed</button> <b id="level-speed">1/s -> 2/s</b> Price: <span id="price-speed">100</span> squares</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

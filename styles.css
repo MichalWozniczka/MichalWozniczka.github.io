@@ -1,0 +1,24 @@
+body {
+    font-family: courier, serif;
+}
+
+#canvas {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#board {
+    width: 800px;
+    height: 800px;
+    float: left;
+}   
+
+#score {
+    width: 800px;
+    height: auto;
+    margin-top: 50px;
+    float: left;
+}
