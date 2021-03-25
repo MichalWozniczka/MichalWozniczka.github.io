@@ -3,7 +3,7 @@ let maxBoardScore = BigInt(2 ** (numSquares * numSquares) - 1) * 100n;
 let boardScore = 0n;
 let boardScoreIncrPerSecond = 1n;
 
-let squaresTotal = 100n;
+let squaresTotal = 0n;
 let squaresUnclaimed = 0n;
 
 setInterval(function() {
