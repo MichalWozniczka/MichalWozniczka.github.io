@@ -19,8 +19,11 @@
         <button onclick="claimSquares()">Claim Squares</button>
         <hr>
         <h3>Upgrades</h3>
-        <p><button id="upgrade-dimensions" disabled onclick="upgradeDimensions()">Increase Dimensions</button> <b id="level-dimensions">1 -> 2</b> Price: <span id="price-dimensions">10</span> squares (Board must be maxed out!)</p>
-        <p id="speed" hidden><button id="upgrade-speed" disabled onclick="upgradeSpeed()">Counter Speed</button> <b id="level-speed">1/s -> 2/s</b> Price: <span id="price-speed">100</span> squares</p>
+        <p id="dimensions"><button id="dimensions-button" disabled onclick="doUpgrade('dimensions')">Increase Dimensions</button> <b id="dimensions-upgrade"></b> Price: <span id="dimensions-price"></span> squares (Board must be maxed out!)</p>
+        <p id="speed" hidden><button id="speed-button" disabled onclick="doUpgrade('speed')">Counter Speed</button> <b id="speed-upgrade"></b> Price: <span id="speed-price"></span> squares</p>
+        <p id="value" hidden><button id="value-button" disabled onclick="doUpgrade('value')">Counter Value</button> <b id="value-upgrade"></b> Price: <span id="value-price"></span> squares</p>
+        <p id="minerCount" hidden><button id="minerCount-button" disabled onclick="doUpgrade('minerCount')">Miner Count</button> <b id="minerCount-upgrade"></b> Price: <span id="minerCount-price"></span> squares</p>
+        <p id="minerInterval" hidden><button id="minerInterval-button" disabled onclick="doUpgrade('minerInterval')">Miner Interval</button> <b id="minerInterval-upgrade"></b> Price: <span id="minerInterval-price"></span> squares</p>
     </div>
 
     <script src="script.js"></script>
