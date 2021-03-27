@@ -1,4 +1,4 @@
-let squaresTotal = 11111111111111111110n;
+let squaresTotal = 0n;
 let squaresUnclaimed = 0n;
 let boardScore = 0n;
 
@@ -26,7 +26,7 @@ class Upgrade {
             case "minerCount":
                 return 10n ** 5n;
             case "minerInterval":
-                return 10n ** 5n;
+                return 10n ** 5n * 3n ** (level - 1n);
         }
     }
 
@@ -144,7 +144,6 @@ class Miner {
 }
 
 let miners = [new Miner()];
-upgrades["dimensions"].level = 3n;
 
 function getMaxBoardScore() {
     let dimensions = upgrades["dimensions"].getValue();
